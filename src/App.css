@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+/* Default styles */
+
+body {
+  background-color: #f8f9fa;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero {
+  background-image: url('./img2.jpg');
+  background-position: center;
+  background-size: cover;
+  color:#f8f9fa;
+  height: 650px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+header {
+  background-color: rgba(32, 117, 113, 0.9);
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.list-group-item {
+  background-color: #fff;
+  border: none;
+}
+
+.list-group-item a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.list-group-item:hover {
+  background-color: #ddd;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.hero .btn-primary {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 30px;
+}
+
+#photo{
+  border-radius: 50%;
+  border: 1px solid lightgrey;
+  width: 165px;
+  height: 170px;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 768px) {
+
+  .hero {
+    height: auto;
+    padding: 50px 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  .hero h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
   }
+
+  .hero p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .hero .btn-primary {
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
+
+  #photo {
+    width: 100px;
+    height: 100px;
+  }
+
 }
