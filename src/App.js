@@ -15,7 +15,7 @@ function Portfolio() {
       <header className=" p-3">
         <div className="container">
           <div className="row">
-            <div className="col-md-8">
+            <div className="col-md-14">
               <div className='d-flex'>
                 
                 <div className="col-md-12 text-center">
